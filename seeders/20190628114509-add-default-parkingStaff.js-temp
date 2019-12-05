@@ -1,0 +1,19 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('parkingStaffs', [
+      // {
+      //   userId: 3,
+      //   phone: '7894561230',
+      //   dob: new Date(),
+      //   nationality: 'US',
+      //   createdAt: new Date()
+      // }
+    ]);
+  },
+
+  down: (queryInterface, Sequelize) => {
+   return queryInterface.bulkDelete('parkingStaffs', null, {});
+  }
+};

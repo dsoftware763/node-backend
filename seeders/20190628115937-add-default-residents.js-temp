@@ -1,0 +1,19 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('residents', [
+      // {
+      //   userId: 4,
+      //   phone: '123456789',
+      //   dob: new Date(),
+      //   nationality: 'US',
+      //   createdAt: new Date(),
+      // }
+    ]);
+  },
+
+  down: (queryInterface, Sequelize) => {
+   return queryInterface.bulkDelete('residents', null, {});
+  }
+};

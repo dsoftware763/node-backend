@@ -1,0 +1,68 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('notifications', [
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'GENERAL',
+      //   notificationPriority: 'info',
+      //   notificationFor: JSON.stringify(['all']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'IMPORTANT',
+      //   notificationPriority: 'info',
+      //   notificationFor: JSON.stringify(['admin']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'IMPORTANT',
+      //   notificationPriority: 'primary',
+      //   notificationFor: JSON.stringify(['manager']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'GENERAL',
+      //   notificationPriority: 'danger',
+      //   notificationFor: JSON.stringify(['resident','guest']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'GENERAL',
+      //   notificationPriority: 'warning',
+      //   notificationFor: JSON.stringify(['guest']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'GENERAL',
+      //   notificationPriority: 'info',
+      //   notificationFor: JSON.stringify(['parkingStaff']),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // },
+      // {
+      //   notificationText: 'Hello world',
+      //   category: 'GENERAL',
+      //   notificationPriority: 'success',
+      //   notificationFor: JSON.stringify(["1","2","3","4"]),
+      //   notificationBy: 1,
+      //   createdAt: new Date(),
+      // }
+    ]);
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('notifications', null, {});
+  }
+};

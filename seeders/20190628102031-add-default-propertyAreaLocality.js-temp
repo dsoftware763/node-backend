@@ -1,0 +1,13 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('propertyAreaLocalities', [
+      // {name:'N Marty Ave',longitude:36.7996756,latitude:119.8535622,countryID:'USA',stateID:5,cityID:346,zip:'93711',createdAt: new Date()}
+    ]);
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('propertyAreaLocalities', null, {});
+  }
+};

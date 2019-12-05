@@ -1,0 +1,25 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('vehicles', [
+      // {
+      //   vehicleOptMakeId: 7,
+      //   vehicleOptModelId: 2,
+      //   vehicleOptYear: '2015',
+      //   vehicleOptColor: 'White',
+      //   vehicleOptChastype: 'Sedan',
+      //   vehicleOptWheeltype: null,
+      //   ownerUsersId: 4,
+      //   licencePlateNumber: 'OBX12',
+      //   optStateId: 16,
+      //   isEnabled: true,
+      //   createdAt: new Date()
+      // }
+    ]);
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('vehicles', null, {});
+  }
+};

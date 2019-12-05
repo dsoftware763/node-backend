@@ -1,0 +1,65 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('vehicleOptModels', [
+      {name:'325iX - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325is - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325i - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325iX - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'M3 - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'318i - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325i - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'318i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'318is - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'318ti - 2dr Hatchback',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'323i - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'323is - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328is - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330xi - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325Ci - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325i - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'M3 - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325xi - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330Ci - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325xi - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'325Ci - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330Ci - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i xDrive - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i xDrive - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i xDrive - Coupe',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335d - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i - Convertible',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i SULEV - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i xDrive - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i xDrive SULEV - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i xDrive - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328d - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'ActiveHybrid 3 - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'320i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'320i xDrive - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330i xDrive - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'340i - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'340i xDrive - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328d xDrive - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330i xDrive - Wagon',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330e iPerformance - Sedan',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'328i xDrive - 4dr Hatchback',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'335i xDrive - 4dr Hatchback',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'330i xDrive - 4dr Hatchback',vehicleOptMakeId: 7,createdAt: new Date()},
+      {name:'340i xDrive - 4dr Hatchback',vehicleOptMakeId: 7,createdAt: new Date()}
+  ], {});
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('vehicleOptModels', null, {});
+  }
+};
